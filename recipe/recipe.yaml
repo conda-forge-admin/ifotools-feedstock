@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 1.0a6
+  version: "1.0a10"
 
 package:
   name: ifotools
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/i/ifotools/ifotools-${{ version }}.tar.gz
-  sha256: 3400da2750703bf3baf1d9bd677b0609698893da01a36d66dea4cd81adbc7b6f
+  sha256: 426dc96fcf575be9f67a8c8a026e9ac68804cc4f352d8766e079696b7936977b
 
 build:
   number: 0
@@ -34,7 +34,7 @@ tests:
       imports:
         - ifotools
       pip_check: true
-      python_version: 
+      python_version:
         - ${{ python_min }}.*
         - "*"
 
